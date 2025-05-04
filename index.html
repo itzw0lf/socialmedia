@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: hsl(0, 0%, 8%);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .card {
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 15px;
+      width: 100%;
+      max-width: 320px;
+      text-align: center;
+      padding: 40px 25px;
+    }
+    
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 25px;
+      object-fit: cover;
+    }
+    
+    .name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: white;
+    }
+    
+    .location {
+      color: hsl(75, 100%, 50%);
+      margin-bottom: 25px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    
+    .bio {
+      margin-bottom: 25px;
+      font-size: 14px;
+      color: hsl(0, 0%, 85%);
+    }
+    
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .link-button {
+      background-color: hsl(0, 0%, 20%);
+      color: white;
+      padding: 12px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      transition: all 0.2s ease;
+      display: block;
+    }
+    
+    .link-button:hover {
+      background-color: hsl(75, 100%, 50%);
+      color: hsl(0, 0%, 12%);
+      cursor: pointer;
+    }
+    
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 25px;
+      color: hsl(0, 0%, 50%);
+    }
+    
+    .attribution a {
+      color: hsl(228, 60%, 60%);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img src="../social-links-profile-main/assets/images/avatar-jessica.jpeg" alt="Jessica Randall" class="profile-pic">
+    <h1 class="name">Jessica Randall</h1>
+    <p class="location">London, United Kingdom</p>
+    <p class="bio">"Front-end developer and avid reader."</p>
+    
+    <div class="links">
+      <a href="#" class="link-button">GitHub</a>
+      <a href="#" class="link-button">Frontend Mentor</a>
+      <a href="#" class="link-button">LinkedIn</a>
+      <a href="#" class="link-button">Twitter</a>
+      <a href="#" class="link-button">Instagram</a>
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Wolf</a>.
+    </div>
+  </main>
+</body>
+</html>
